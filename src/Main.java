@@ -9,7 +9,7 @@ public class Main {
         int check = myObj.nextInt() + 100;
 
         int add = (check - 100) / 100;
-        if(check > 1100) {
+        if (check > 1100) {
             check += add;
         } else {
             add = 0;
