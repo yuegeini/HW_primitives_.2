@@ -1,12 +1,11 @@
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Enter additional money: ");
 
-        int check = myObj.nextInt() + 100;
+        int check = 100;
+        int cash = 1050;
+        check += cash;
 
         int add = (check - 100) / 100;
         if (check > 1100) {
