@@ -3,18 +3,18 @@ public class Main {
     public static void main(String[] args) {
 
 
-        int check = 100;
-        int cash = 1050;
-        check += cash;
+        int balance = 100;
+        int replenishment = 1100;
 
-        int add = (check - 100) / 100;
-        if (check > 1100) {
-            check += add;
+        int bonus = (replenishment) / 100;
+        if (replenishment > 1000) {
+            balance += bonus + replenishment;
         } else {
-            add = 0;
+            bonus = 0;
+            balance += bonus + replenishment;
         }
-        System.out.println("New check: " + check);
-        System.out.println("Bonus money: " + add);
+        System.out.println("New check: " + balance);
+        System.out.println("Bonus money: " + bonus);
 
     }
 }
